@@ -111,6 +111,12 @@ section:not(:first-child) {
     font-size: 0.85rem;
     margin-bottom: 0.67em;
 }
+    @media print {
+        .quick-info small {
+            display: none;
+        }
+    }
+
     .quick-info .label {
         display: block;
         text-transform: uppercase;
