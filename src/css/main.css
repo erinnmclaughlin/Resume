@@ -54,7 +54,7 @@ section:not(:first-child) {
 
 #sidebar, #content {   
     height: 100%;
-    padding: 2in 1.5rem 1rem 1.5rem;
+    padding: 1.9in 1.5rem 1rem 1.5rem;
 }
 
     #sidebar {
@@ -109,7 +109,7 @@ section:not(:first-child) {
 
 .quick-info {
     font-size: 0.85rem;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.67em;
 }
     .quick-info .label {
         display: block;
