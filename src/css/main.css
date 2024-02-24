@@ -21,8 +21,22 @@ html {
 }
 
 body {
-    background-color: #1a1a1a;
-    font-size: 14px;
+    background-color: #000;
+    color: #1a1a1a;
+    font-size: 14.5px;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+section:not(:first-child) {
+    margin-top: 1.67rem;
 }
 
 #resume {
@@ -30,107 +44,109 @@ body {
     width: 8.5in;
     margin: auto;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2.85in 1fr;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
 }
 
-    #resume > header {        
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        height: 1.5in;
-        text-align: center;
+#sidebar, #content {   
+    height: 100%;
+    padding: 2in 1.5rem 1rem 1.5rem;
+}
+
+    #sidebar {
+        padding-left: 0.375in;
+        background-color: #f1f1f1;
     }
 
-        #resume > header > div {
-            background-color: #fff;
-            border: 1px solid #1a1a1a;
-            padding: 2rem 0;
-            margin: auto;
-            min-width: 50%;
-        }
+    #content {
+        padding-right: 0.375in;
+        background-color: #fff;
+    }
 
-.heading {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.25ch;
-    margin-bottom: 0.5rem;
-}
-
-.subheading {
-    font-weight: 300;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-
-#sidebar, #content {   
-    padding: 1.8in 1.5rem 1rem 1.5rem;
-    height: 100%;
-    flex: 1 1 auto;
-}
-
-#sidebar > section, #content > section {
-    margin-bottom: 2rem;
-}
-
-#sidebar {
-    padding-left: 0.375in;
-    background-color: #f1f1f1;
-    width: 33%;
-}
-
-#content {
-    padding-right: 0.375in;
+.title-card {
+    position: absolute;
+    top: 0.3in;
+    left: 2in;
+    height: 1.25in;
+    width: 4.5in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-color: #fff;
-    width: 67%;
+    border: 1px solid #1a1a1a;
+    padding: 2rem 0;
 }
+
+    .title-card .title {
+        font-size: 1.24rem;
+        text-transform: uppercase;
+        letter-spacing: 0.24ch;
+        margin-bottom: 0.5rem;
+    }
+
+    .title-card .subtitle {
+        font-weight: 300;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 1.04rem;
+        letter-spacing: 0.04ch;
+    }
 
 .section-heading {
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 0.2ch;
+    letter-spacing: 0.15ch;
     font-weight: 600;
     border-bottom: 1px solid;
     padding-bottom: 0.33rem;
     margin-bottom: 0.67rem;
 }
 
-.info-group {
+.quick-info {
     max-width: 100%;
-    font-size: 90%;
+    font-size: 0.85rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 0.75em;
 }
 
-.job {
+    .quick-info .label {
+        text-transform: uppercase;
+        letter-spacing: 0.1ch;
+        font-size: 0.75rem;
+        font-weight: 800;
+    }
+
+.item {
     margin-bottom: 1.5rem;
 }
 
-    .job .job-heading {
+    .item .item-heading {
         display: flex;
         justify-content: space-between;
     }
 
-    .job .job-title {
+    .item .item-title {
         font-size: 1rem;
         margin: 0;
     }
 
-    .job .job-location {
+    .item .item-location {
         text-align: right;
         white-space: nowrap;
         margin: 0;
+        color: #8a8a8a;
     }
 
-    .job .job-dates {
+    .item .item-dates {
         margin: 0.1rem 0;
+        color: #8a8a8a;
     }
 
-    .job ul {
+    .item ul {
         margin-top: 0;
     }
