@@ -23,7 +23,7 @@ html {
 body {
     background-color: #000;
     color: #1a1a1a;
-    font-size: 14.5px;
+    font-size: 12.5px;
 }
 
 a {
@@ -98,7 +98,7 @@ section:not(:first-child) {
     }
 
 .section-heading {
-    font-size: 0.9rem;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 0.15ch;
     font-weight: 600;
@@ -108,7 +108,6 @@ section:not(:first-child) {
 }
 
 .quick-info {
-    font-size: 0.85rem;
     margin-bottom: 0.67em;
 }
     @media print {
@@ -121,12 +120,12 @@ section:not(:first-child) {
         display: block;
         text-transform: uppercase;
         letter-spacing: 0.1ch;
-        font-size: 0.75rem;
+        font-size: 0.9em;
         font-weight: 800;
     }
 
 .item {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
 }
 
     .item .item-heading {
@@ -135,7 +134,7 @@ section:not(:first-child) {
     }
 
     .item .item-title {
-        font-size: 1rem;
+        font-size: 1.15em;
         margin: 0;
     }
 
@@ -144,6 +143,7 @@ section:not(:first-child) {
         white-space: nowrap;
         margin: 0;
         color: #8a8a8a;
+        padding-left: 2ch;
     }
 
     .item .item-dates {
@@ -154,7 +154,6 @@ section:not(:first-child) {
     .skill-table ul {
         padding-left: 1.1rem;
         max-height: 2in;
-        font-size: 0.8rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
