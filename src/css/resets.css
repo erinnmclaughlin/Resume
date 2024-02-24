@@ -296,6 +296,7 @@ h2 + p,
 h3 + p,
 h4 + p,
 h5 + p,
-h6 + p {
+h6 + p,
+ul {
 	margin-top: 0;
 }

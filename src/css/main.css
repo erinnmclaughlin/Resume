@@ -41,6 +41,7 @@ section:not(:first-child) {
 
 #resume {
     height: 11in;
+    max-height: 11in;
     width: 8.5in;
     margin: auto;
     position: relative;
@@ -144,6 +145,15 @@ section:not(:first-child) {
         color: #8a8a8a;
     }
 
-    .item ul {
-        margin-top: 0;
+    .skill-table ul {
+        padding-left: 1.1rem;
+        max-height: 2in;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+        .skill-table ul li {
+            width: 33%;
+        }
