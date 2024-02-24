@@ -107,14 +107,11 @@ section:not(:first-child) {
 }
 
 .quick-info {
-    max-width: 100%;
     font-size: 0.85rem;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 0.75em;
 }
-
     .quick-info .label {
+        display: block;
         text-transform: uppercase;
         letter-spacing: 0.1ch;
         font-size: 0.75rem;
