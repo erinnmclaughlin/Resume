@@ -110,12 +110,6 @@ section:not(:first-child) {
 .quick-info {
     margin-bottom: 0.67em;
 }
-    @media print {
-        .quick-info small {
-            display: none;
-        }
-    }
-
     .quick-info .label {
         display: block;
         text-transform: uppercase;
