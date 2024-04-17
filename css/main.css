@@ -36,7 +36,7 @@ a {
     }
 
 section:not(:first-child) {
-    margin-top: 1.67rem;
+    margin-top: 1.5rem;
 }
 
 #resume {
@@ -52,9 +52,40 @@ section:not(:first-child) {
     margin: auto;
 }
 
-#sidebar, #content {   
+#title-card {
+    position: absolute;
+    top: 0.2in;
+    left: 2in;
+    height: 1.175in;
+    width: 4.5in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    padding: 2rem 0;
+}
+
+    #title-card .title {
+        font-size: 1.24rem;
+        text-transform: uppercase;
+        letter-spacing: 0.24ch;
+        margin-bottom: 0.5rem;
+    }
+
+    #title-card .subtitle {
+        font-weight: 300;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 1.04rem;
+        letter-spacing: 0.04ch;
+    }
+
+#sidebar,
+#content {
     height: 100%;
-    padding: 1.9in 1.5rem 1rem 1.5rem;
+    padding: 1.7in 1.5rem 1rem 1.5rem;
 }
 
     #sidebar {
@@ -67,35 +98,6 @@ section:not(:first-child) {
         background-color: #fff;
     }
 
-.title-card {
-    position: absolute;
-    top: 0.3in;
-    left: 2in;
-    height: 1.25in;
-    width: 4.5in;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #1a1a1a;
-    padding: 2rem 0;
-}
-
-    .title-card .title {
-        font-size: 1.24rem;
-        text-transform: uppercase;
-        letter-spacing: 0.24ch;
-        margin-bottom: 0.5rem;
-    }
-
-    .title-card .subtitle {
-        font-weight: 300;
-        margin-bottom: 0;
-        text-transform: uppercase;
-        font-size: 1.04rem;
-        letter-spacing: 0.04ch;
-    }
 
 .section-heading {
     font-size: 1em;
@@ -110,6 +112,7 @@ section:not(:first-child) {
 .quick-info {
     margin-bottom: 0.67em;
 }
+
     .quick-info .label {
         display: block;
         text-transform: uppercase;
@@ -118,21 +121,20 @@ section:not(:first-child) {
         font-weight: 800;
     }
 
-.item {
-    margin-bottom: 1.5em;
+.item-heading,
+.item-subheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.1rem 0;
 }
 
-    .item .item-heading {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .item .item-title {
-        font-size: 1.15em;
+    .item-heading .item-title {
+        font-weight: 500;
         margin: 0;
     }
 
-    .item .item-location {
+    .item-heading .item-location {
         text-align: right;
         white-space: nowrap;
         margin: 0;
@@ -140,19 +142,32 @@ section:not(:first-child) {
         padding-left: 2ch;
     }
 
-    .item .item-dates {
-        margin: 0.1rem 0;
-        color: #8a8a8a;
+    .item-subheading .job-title,
+    .item-subheading .job-dates {
+        font-size: 10pt;
     }
 
-    .skill-table ul {
-        padding-left: 1.1rem;
-        max-height: 2in;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-        .skill-table ul li {
-            width: 33%;
+        .item-subheading .job-title {
+            font-weight: 750;
         }
+
+        .item-subheading .job-dates {
+            color: #8a8a8a;
+        }
+
+.item ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75em;
+}
+
+.skill-table ul {
+    padding-left: 1.1rem;
+    max-height: 2in;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+    .skill-table ul li {
+        width: 33%;
+    }
