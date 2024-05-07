@@ -24,6 +24,7 @@ body {
     background-color: #000;
     color: #1a1a1a;
     font-size: 12.5px;
+    display: flex;
 }
 
 a {
