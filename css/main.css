@@ -42,63 +42,88 @@ section:not(:first-child) {
 
 #resume {
     height: 11in;
-    max-height: 11in;
     width: 8.5in;
     margin: auto;
     position: relative;
-    display: grid;
-    grid-template-columns: 2.85in 1fr;
-    flex-wrap: wrap;
-    max-width: 1200px;
     margin: auto;
-}
-
-#title-card {
-    position: absolute;
-    top: 0.2in;
-    left: 2in;
-    height: 1.175in;
-    width: 4.5in;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #1a1a1a;
-    padding: 2rem 0;
 }
 
-    #title-card .title {
-        font-size: 1.24rem;
-        text-transform: uppercase;
-        letter-spacing: 0.24ch;
-        margin-bottom: 0.5rem;
+    #resume > header {
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        padding: 1.25rem 1.5rem 1rem;
+        position: relative;
+        flex-grow: 0;
+        color: #fff;
     }
 
-    #title-card .subtitle {
-        font-weight: 300;
-        margin-bottom: 0;
-        text-transform: uppercase;
-        font-size: 1.04rem;
-        letter-spacing: 0.04ch;
+        @media print {
+            #resume > header {
+                background-image: unset;
+                color: #1a1a1a;
+                border-bottom: 1px solid #e1e1e1;
+            }
+        }
+
+        #resume > header > .subtitle {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+    #resume > section {
+        margin-top: 0;
+        display: flex;
+        flex-grow: 1;
     }
+
+    @media screen and (max-width: 8.5in) {
+        #resume {
+            width: 100vw;
+            overflow-x: hidden;
+            height: unset;
+        }
+
+        #resume > section {
+            flex-direction: column;
+        }
+    }
+
+#woman_working {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -34.5px;
+}
 
 #sidebar,
 #content {
     height: 100%;
-    padding: 1.7in 1.5rem 1rem 1.5rem;
+    padding: 1.5rem;
 }
 
     #sidebar {
-        padding-left: 0.375in;
-        background-color: #f1f1f1;
+        width: 2.85in;
+        flex-grow: 0;
     }
 
     #content {
-        padding-right: 0.375in;
-        background-color: #fff;
+        flex-grow: 1;
     }
 
+    #sidebar {
+        border-right: 1px solid #e1e1e1;
+    }
+
+    @media screen and (max-width: 8.5in)  {
+        #sidebar {
+            width: unset;
+            flex-grow: 1;
+            padding-bottom: 0;
+        }
+    }
 
 .section-heading {
     font-size: 1em;
