@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: Inter;
-    src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    src: url('../fonts/Inter/Inter.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('../fonts/NotoSans/NotoSans.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Noto Sanes';
     font-style: italic;
-    src: url('../fonts/NotoSans/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('../fonts/NotoSans/NotoSansItalic.ttf') format('truetype');
 }
 
 html {
@@ -29,15 +29,17 @@ body {
 
 a {
     text-decoration: none;
-    color: darkblue;
+    color: darkslateblue;
 }
 
     a:hover {
         text-decoration: underline;
     }
 
-section:not(:first-child) {
-    margin-top: 1.5rem;
+.icon {
+    height: 1.1em;
+    width: 1.1em;
+    align-self: center;
 }
 
 #resume {
@@ -59,14 +61,6 @@ section:not(:first-child) {
         color: #fff;
     }
 
-        @media print {
-            #resume > header {
-                background-image: unset;
-                color: #1a1a1a;
-                border-bottom: 1px solid #e1e1e1;
-            }
-        }
-
         #resume > header > .subtitle {
             font-size: 1rem;
             margin-bottom: 0;
@@ -78,18 +72,6 @@ section:not(:first-child) {
         flex-grow: 1;
     }
 
-    @media screen and (max-width: 8.5in) {
-        #resume {
-            width: 100vw;
-            overflow-x: hidden;
-            height: unset;
-        }
-
-        #resume > section {
-            flex-direction: column;
-        }
-    }
-
 #woman_working {
     position: absolute;
     height: 100%;
@@ -98,53 +80,84 @@ section:not(:first-child) {
     margin-bottom: -34.5px;
 }
 
-#sidebar,
-#content {
-    height: 100%;
-    padding: 1.5rem;
+#summary {
+    padding: 1rem 1.5rem 0;
+    border-bottom: 1px solid #e1e1e1;
 }
 
-    #sidebar {
-        width: 2.85in;
-        flex-grow: 0;
+    #summary > .section-links {
+        display: flex;
+        gap: 0.67rem;
+        overflow-x: auto;
+    }
+
+        #summary > .section-links label {
+            display: flex;
+        }
+
+    #summary .info-group {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
     }
 
     #content {
         flex-grow: 1;
     }
 
+    #content > section {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+        #content > section:last-child {
+            border-bottom: 0;
+        }
+
     #sidebar {
         border-right: 1px solid #e1e1e1;
     }
 
-    @media screen and (max-width: 8.5in)  {
-        #sidebar {
-            width: unset;
-            flex-grow: 1;
-            padding-bottom: 0;
+    @media screen and (max-width: 8.5in) {
+        #resume {
+            width: 100vw;
+            overflow-x: hidden;
+            height: unset;
+        }
+
+        #resume > header {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        #resume > section {
+            flex-direction: column;
+        }
+
+        #content > section {
+            padding: 1rem;
         }
     }
 
 .section-heading {
     font-size: 1em;
     text-transform: uppercase;
-    letter-spacing: 0.15ch;
+    letter-spacing: 0.1ch;
     font-weight: 600;
-    border-bottom: 1px solid;
     padding-bottom: 0.33rem;
-    margin-bottom: 0.67rem;
+    margin-bottom: 0;
 }
 
-.quick-info {
-    margin-bottom: 0.67em;
+.item {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
 }
 
-    .quick-info .label {
-        display: block;
-        text-transform: uppercase;
-        letter-spacing: 0.1ch;
-        font-size: 0.9em;
-        font-weight: 800;
+    .item img {
+        height: 32px;
+        width: 32px;
     }
 
 .item-heading,
@@ -182,18 +195,21 @@ section:not(:first-child) {
         }
 
 .item ul {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     margin-bottom: 0.75em;
 }
 
-.skill-table ul {
-    padding-left: 1.1rem;
-    max-height: 2in;
+ul.skills {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    justify-content: center;
 }
 
-    .skill-table ul li {
-        width: 33%;
+    ul.skills li:not(:last-child)::after {
+        content: '\00B7';
+        display: inline-flex;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
     }

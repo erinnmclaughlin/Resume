@@ -7,58 +7,53 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-
     <main id="resume">
         <header>
+            <div class="background-container">
+                <div class="stars-container">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                </div>
+            </div>
             <h1 class="title">Erin McLaughlin, MSE</h1>
             <p class="subtitle">Senior Software Engineer</p>
             <img id="woman_working" src="images/woman_working.svg" />
         </header>
 
+        <article id="summary">
+            <h2 class="section-heading">Summary</h2>
+            <p>
+                I am an experienced C#/.NET developer with a passion for continuous learning and development.
+                I thrive in creative environments where context drives technical decision-making.
+            </p>
+            <p class="section-links">
+                <a class="info-group" title="Linked In" href="https://www.linkedin.com/in/e1mclaughlin/" target="_blank">
+                    <img class="icon" src="images/icons/linkedin.svg" />
+                    <span>
+                        e1mclaughlin
+                    </span>
+                </a>
+                <a class="info-group" title="GitHub" href="https://github.com/erinnmclaughlin" target="_blank">
+                    <img class="icon" src="images/icons/github.svg" />
+                    <span>
+                        erinnmclaughlin
+                    </span>
+                </a>
+                <a class="info-group" title="Personal Website" href="https://erinnmclaughlin.com/" target="_blank">
+                    <img class="icon" src="images/icons/globe.svg" />
+                    <span>erinnmclaughlin.com</span>
+                </a>
+                <a class="info-group" title="Email Address" href="mailto:erinmclaughlin219@gmail.com" type="mailto">
+                    <img class="icon" src="images/icons/envelope.svg" />
+                    <span>erinmclaughlin219@gmail.com</span>
+                </a>
+            </p>
+        </article>
+
         <section>
+            <!--
             <aside id="sidebar">
-                <section>
-                    <h2 class="section-heading">Contact</h2>
-                    <div class="quick-info">
-                        <label class="label" for="phone">Phone</label>
-                        <a id="phone" href="tel:4342609688" type="tel">
-                            (434) 260-9688
-                        </a>
-                    </div>
-                    <div class="quick-info">
-                        <label class="label" for="email">Email</label>
-                        <a id="email" href="mailto:erinmclaughlin219@gmail.com" type="email">
-                            erinmclaughlin219@gmail.com
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="section-heading">Social</h2>
-                    <div class="quick-info">
-                        <label class="label" for="linkedin">LinkedIn</label>
-                        <a id="linkedin" href="https://www.linkedin.com/in/e1mclaughlin/" target="_blank">
-                            e1mclaughlin
-                        </a>
-                    </div>
-                    <div class="quick-info">
-                        <label class="label" for="github">GitHub</label>
-                        <a id="github" href="https://github.com/erinnmclaughlin" target="_blank">
-                            erinnmclaughlin
-                        </a>
-                    </div>
-                    <div class="quick-info">
-                        <label class="label" for="nuget">NuGet</label>
-                        <a id="nuget" href="https://www.nuget.org/profiles/erinnmclaughlin" target="_blank">
-                            erinnmclaughlin
-                        </a>
-                    </div>
-                    <div class="quick-info">
-                        <label class="label" for="website">Website</label>
-                        <a id="website" href="https://erinnmclaughlin.com/" target="_blank">
-                            erinnmclaughlin.com
-                        </a>
-                    </div>
-                </section>
                 <section>
                     <h2 class="section-heading">Sample Projects</h2>
                     <div class="quick-info">
@@ -95,119 +90,166 @@
                     </div>
                 </section>
             </aside>
+        -->
             <article id="content">
                 <section>
-                    <h2 class="section-heading">About</h2>
-                    <p>
-                        I am an experienced C#/.NET developer with a passion for continuous learning and development.
-                        I thrive in creative environments where context drives technical decision-making.
-                    </p>
-                </section>
-                <section>
-                    <h2 class="section-heading">Experience</h2>
+                    <h2 class="section-heading">Work Experience</h2>
                     <article class="item">
-                        <div class="item-heading">
-                            <h3 class="item-title">
-                                Cobalt Benefits Group, LLC
-                            </h3>
-                            <span class="item-location">Remote</span>
+                        <div class="item-icon">
+                            <img src="images/cobalt-logo.png" />
                         </div>
-                        <div class="item-subheading">
-                            <h4 class="job-title">Senior Software Engineer / Platform Analyst</h4>
-                            <span class="job-dates">Mar 2024 &mdash; Present</span>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">
+                                    Cobalt Benefits Group, LLC
+                                </h3>
+                                <span class="item-location">Remote</span>
+                            </div>
+                            <div class="item-subheading">
+                                <h4 class="job-title">Senior Software Engineer / Platform Analyst</h4>
+                                <span class="job-dates">Mar 2024 &mdash; Present</span>
+                            </div>
+                            <ul>
+                                <li>Lead of the software architect & technical standards "squad"</li>
+                                <li>Developed processes to improve efficiency within the software development group.</li>
+                                <li>Helped to mentor junior developers.</li>
+                            </ul>
+                            <div class="item-subheading">
+                                <h4 class="job-title">Application Developer</h4>
+                                <span class="job-dates">Aug 2023 &mdash; Mar 2024</span>
+                            </div>
+                            <ul>
+                                <li>Developed C#/.NET applications for internal stakeholders</li>
+                                <li>Transitioned DevOps workflow to better support incremental, collaborative development</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Lead of the software architect & technical standards "squad"</li>
-                            <li>Developed processes to improve efficiency within the software development group.</li>
-                            <li>Helped to mentor junior developers.</li>
-                        </ul>
-                        <div class="item-subheading">
-                            <h4 class="job-title">Application Developer</h4>
-                            <span class="job-dates">Aug 2023 &mdash; Mar 2024</span>
-                        </div>
-                        <ul>
-                            <li>Developed C#/.NET applications for internal stakeholders</li>
-                            <li>Transitioned DevOps workflow to better support incremental, collaborative development</li>
-                        </ul>
                     </article>
                     <article class="item">
-                        <div class="item-heading">
-                            <h3 class="item-title">Lighthouse Instruments</h3>
-                            <span class="item-location">Charlottesville, VA</span>
+                        <div class="item-icon">
+                            <img src="images/lighthouse-logo.png" />
                         </div>
-                        <div class="item-subheading">
-                            <h4 class="job-title">Software Engineer</h4>
-                            <span class="job-dates">Mar 2019 &mdash; Aug 2023</span>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">Lighthouse Instruments</h3>
+                                <span class="item-location">Charlottesville, VA</span>
+                            </div>
+                            <div class="item-subheading">
+                                <h4 class="job-title">Software Engineer</h4>
+                                <span class="job-dates">Mar 2019 &mdash; Aug 2023</span>
+                            </div>
+                            <ul>
+                                <li>Led a small team of developers building an internal web application with C#, .NET, and Blazor</li>
+                                <li>Helped to replace several paper-based internal processes</li>
+                                <li>Prioritized continuous integration and rapid user feedback</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Led a small team of developers building an internal web application with C#, .NET, and Blazor</li>
-                            <li>Helped to replace several paper-based internal processes</li>
-                            <li>Prioritized continuous integration and rapid user feedback</li>
-                        </ul>
+                    </article>
+                </section>
+                <section>
+                    <h2 class="section-heading">Sample Projects</h2>
+                    <article class="item">
+                        <div class="item-icon">
+                            <img src="images/wordlp.svg" />
+                        </div>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">WordLP <small>&middot; <a href="https://github.com/erinnmclaughlin/Wordlp" target="_blank">Code</a> / <a href="https://wordlp.azurewebsites.net/" target="_blank">Demo</a></small></h3>
+                            </div>
+                            A wordle clone built for a friend's wedding. Made with Blazor WASM and designed for mobile.
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="item-icon">
+                            <img src="images/jam-exam.png" />
+                        </div>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">Jam Exam <small>&middot; <a href="https://github.com/erinnmclaughlin/Jam-Exam" target="_blank">Code</a> / <a href="https://jam-exam.azurewebsites.net/" target="_blank">Demo</a></small></h3>
+                            </div>
+                            A musical trivia game consuming Spotify's REST API. Made with Blazor Server and TailwindCSS.
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="item-icon">
+                            <div style="height: 64px; width: 46px; background-image: url('images/woman_working.svg'); background-position: top right; background-size: cover; margin-left: -12px; margin-bottom: -12px"></div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">My Website <small>&middot; <a href="https://github.com/erinnmclaughlin/PersonalWebsite" target="_blank">Code</a> / <a href="https://erinnmclaughlin.com/" target="_blank">Demo</a></small></h3>
+                            </div>
+                            My personal website, featuring an AI chatbot that can answer questions about me. Made with OpenAI APIs and Microsoft Semantic Kernel.
+                        </div>
                     </article>
                 </section>
                 <section>
                     <h2 class="section-heading">Education</h2>
                     <article class="item">
-                        <div class="item-heading">
-                            <h3 class="item-title">Pennsylvania State University</h3>
-                            <span class="item-location">Remote</span>
+                        <div class="item-icon">
+                            <img src="images/psu-logo.png" />
                         </div>
-                        <div class="item-subheading">
-                            <h4 class="job-title">Master of Software Engineering</h4>
-                            <span class="job-dates">Aug 2021 &mdash; Aug 2023</span>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">Pennsylvania State University</h3>
+                                <span class="item-location">Remote</span>
+                            </div>
+                            <div class="item-subheading">
+                                <h4 class="job-title">Master of Software Engineering</h4>
+                                <span class="job-dates">Aug 2021 &mdash; Aug 2023</span>
+                            </div>
+                            <ul></ul>
                         </div>
-                        <ul></ul>
                     </article>
+                    <!--
                     <article class="item">
-                        <div class="item-heading">
-                            <h3 class="item-title">Bridgewater State University</h3>
-                            <span class="item-location">Bridgewater, MA</span>
+                        <div class="item-icon">
+                            <img src="images/bsu-logo.png" />
                         </div>
-                        <div class="item-subheading">
-                            <h4 class="job-title">Bachelor of Science, General Biology</h4>
-                            <span class="job-dates">Aug 2012 &mdash; May 2016</span>
+                        <div class="item-content">
+                            <div class="item-heading">
+                                <h3 class="item-title">Bridgewater State University</h3>
+                                <span class="item-location">Bridgewater, MA</span>
+                            </div>
+                            <div class="item-subheading">
+                                <h4 class="job-title">Bachelor of Science, General Biology</h4>
+                                <span class="job-dates">Aug 2012 &mdash; May 2016</span>
+                            </div>
+                            <ul></ul>
                         </div>
-                        <ul></ul>
                     </article>
+                -->
                 </section>
                 <section>
                     <h2 class="section-heading">Skills</h2>
-                    <div class="skill-table">
-                        <div class="quick-info">
-                            <ul>
-                                <li>C#</li>
-                                <li>.NET Core & 5.0+</li>
-                                <li>.NET Framework</li>
-                                <li>EF Core</li>
-                                <li>LINQ</li>
-                                <li>Blazor Server</li>
-                                <li>Blazor WASM</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Bootstrap</li>
-                                <li>Tailwind</li>
-                                <li>JavaScript</li>
-                                <li>Microsoft SQL</li>
-                                <li>PostgreSQL</li>
-                                <li>xUnit</li>
-                                <li>SSMS</li>
-                                <li>Visual Studio</li>
-                                <li>Git</li>
-                                <li>GitHub</li>
-                                <li>GitLab</li>
-                                <li>Azure DevOps</li>
-                                <li>CI/CD</li>
-                                <li>Web Development</li>
-                                <li>API Development</li>
-                                <li>Swagger</li>
-                                <li>Software Design</li>
-                                <li>Database Design</li>
-                                <li>Dependency Injection</li>
-                                <li>Agile Development</li>
-                                <li>Code Review</li>
-                            </ul>
-                        </div>
+                    <div class="quick-info">
+                        <ul class="skills">
+                            <li>C#</li>
+                            <li>.NET 8.0</li>
+                            <li>Entity Framework Core</li>
+                            <li>LINQ</li>
+                            <li>Blazor</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind</li>
+                            <li>MSSQL</li>
+                            <li>PostgreSQL</li>
+                            <li>xUnit</li>
+                            <li>SSMS</li>
+                            <li>Visual Studio</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>GitLab</li>
+                            <li>Azure DevOps</li>
+                            <li>CI/CD</li>
+                            <li>Web Development</li>
+                            <li>API Development</li>
+                            <li>Swagger</li>
+                            <li>Software Design</li>
+                            <li>Database Design</li>
+                            <li>Dependency Injection</li>
+                            <li>Agile Development</li>
+                            <li>Code Review</li>
+                        </ul>
                     </div>
                 </section>
             </article>
