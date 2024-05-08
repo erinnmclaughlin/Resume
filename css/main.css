@@ -118,27 +118,6 @@ a {
         border-right: 1px solid #e1e1e1;
     }
 
-    @media screen and (max-width: 8.5in) {
-        #resume {
-            width: 100vw;
-            overflow-x: hidden;
-            height: unset;
-        }
-
-        #resume > header {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        #resume > section {
-            flex-direction: column;
-        }
-
-        #content > section {
-            padding: 1rem;
-        }
-    }
-
 .section-heading {
     font-size: 1em;
     text-transform: uppercase;
@@ -165,7 +144,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.1rem 0;
+    margin-bottom: 0.1rem;
 }
 
     .item-heading .item-title {
@@ -213,3 +192,29 @@ ul.skills {
         margin-left: 0.25rem;
         margin-right: 0.25rem;
     }
+    
+@media screen and (max-width: 8.5in) {
+    #resume {
+        width: 100vw;
+        overflow-x: hidden;
+        height: unset;
+    }
+
+    #resume > header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #resume > section {
+        flex-direction: column;
+    }
+
+    #content > section {
+        padding: 1rem;
+    }
+
+    .item-subheading {
+        align-items: start;
+        flex-direction: column;
+    }
+}
