@@ -87,12 +87,6 @@ ul.inline {
             margin-bottom: 0;
         }
 
-    #resume > section {
-        margin-top: 0;
-        display: flex;
-        flex-grow: 1;
-    }
-
     #resume > footer {
         text-align: center;
         padding: 1rem 1rem 1.5rem;
