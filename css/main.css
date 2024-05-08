@@ -139,6 +139,10 @@ a {
         width: 32px;
     }
 
+    .item p {
+        margin-top: 0.25rem;
+    }
+
 .item-heading,
 .item-subheading {
     display: flex;
@@ -158,11 +162,6 @@ a {
         margin: 0;
         color: #8a8a8a;
         padding-left: 2ch;
-    }
-
-    .item-subheading .job-title,
-    .item-subheading .job-dates {
-        font-size: 10pt;
     }
 
         .item-subheading .job-title {
@@ -205,6 +204,10 @@ ul.skills {
         padding-right: 1rem;
     }
 
+    #summary {
+        padding: 1rem 1rem 0;
+    }
+
     #resume > section {
         flex-direction: column;
     }
@@ -213,8 +216,4 @@ ul.skills {
         padding: 1rem;
     }
 
-    .item-subheading {
-        align-items: start;
-        flex-direction: column;
-    }
 }
