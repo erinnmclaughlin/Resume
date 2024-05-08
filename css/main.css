@@ -68,6 +68,7 @@ ul.inline {
 
 #resume {
     height: 11in;
+    max-height: 11in;
     width: 8.5in;
     margin: auto;
     position: relative;
@@ -151,6 +152,10 @@ ul.inline {
     #content > section:last-child {
         border-bottom: 0;
     }
+
+#projects .item:not(:last-child) {
+    margin-bottom: 1rem;
+}
 
 .section-heading {
     font-size: 1em;
