@@ -82,7 +82,7 @@ ul.inline {
 
         #resume > section p {
             margin: 0;
-            margin-bottom: 0.75em;
+            margin-bottom: 0.5em;
         }
 
     #resume > footer {
@@ -105,7 +105,7 @@ ul.inline {
     height: 100%;
     right: 0;
     bottom: 0;
-    margin-bottom: -34.5px;
+    margin-bottom: -34px;
 }
 
 .section-links {
@@ -167,7 +167,6 @@ ul.inline {
 .item-subheading {
     display: flex;
     align-items: center;
-    margin-bottom: 0.1rem;
     column-gap: 0.5rem;
     justify-content: space-between;
 }
@@ -211,7 +210,6 @@ ul.inline {
     
         #resume > footer > p { 
             display: none;
-            padding-bottom: 1rem;
         }
 
     #summary {
@@ -237,5 +235,9 @@ ul.inline {
 
     #resume {
         max-width: unset;
+    }
+
+    #resume > footer {
+        padding: 0.25rem;
     }
 }
