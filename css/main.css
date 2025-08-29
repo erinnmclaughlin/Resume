@@ -63,16 +63,35 @@ ul.inline {
 }
 
     #resume > header {
-        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
         padding: 1.25rem 1.5rem 1rem;
         position: relative;
         flex-grow: 0;
-        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #e1e1e1;
     }
 
         #resume > header > .subtitle {
             font-size: 1rem;
             margin-bottom: 0;
+        }
+
+        #resume > header > .header-links {
+            margin: 0.33rem auto;
+            display: flex;
+            column-gap: 1rem;
+            row-gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 500px) {
+            #resume > header > .header-links {
+                font-size: 1rem;
+            }
+
+            #resume > header > .header-links span:not(.icon) {
+                display: none;
+            }
         }
 
     #resume > section {
